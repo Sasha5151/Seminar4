@@ -3,16 +3,37 @@
 //и наоборот.
 // [-4, -8, 8, 2] -> [4, 8, -8, -2]
 
-int [] array = new int[4] {-4 ,-8 ,8, 2};
-for (int i = 0 ; i<4 ; i++)
+int size = 4;
+int[] array = new int[size];
+FullArray(array);
+PrintArray(array);
+ReverseSign(array);
+PrintArray(array);
+
+void FullArray(int[] array);
 {
-    array[i] = array[i] *-1;
-    System.Console.Write(array[i]);
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(-100,100);
+    }
 }
 
+void PrintArray(int[] array);
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+       System.Console.Write(array[i] + " "); 
+    }
+    System.Console.WriteLine();
+}
 
-
-
+void ReverseSign(int[] array);
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+       array[i] *= -1; // array[i] = array[i] * -1;
+    }
+}
 
 
 // Задача 33: Задайте массив. Напишите программу, 
