@@ -87,6 +87,7 @@
  //End
 
  // Задача 35. Массив из 123 случ чисел
+ // найдите колличество чисел в интервале от 10 до 99
 
 int size = 123;
 int[] array = new int[size];
@@ -110,3 +111,16 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
+int FindeNum(int[] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if ((array[i] > 10 ) && (array[i] <99 ))
+        count++;
+    }
+    return count;
+} 
+FindeNum(array);
+System.Console.WriteLine();
+System.Console.WriteLine(FindeNum(array));
