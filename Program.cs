@@ -10,7 +10,7 @@ PrintArray(array);
 ReverseSign(array);
 PrintArray(array);
 
-void FullArray(int[] array);
+void FullArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -18,7 +18,7 @@ void FullArray(int[] array);
     }
 }
 
-void PrintArray(int[] array);
+void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -27,7 +27,7 @@ void PrintArray(int[] array);
     System.Console.WriteLine();
 }
 
-void ReverseSign(int[] array);
+void ReverseSign(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
