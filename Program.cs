@@ -43,23 +43,61 @@
 // 4; массив [6, 7, 19, 345, 3] -> нет
 // 3; массив [6, 7, 19, 345, 3] -> да
 
-int size = 5;
+// int size = 5;
+// int[] array = new int[size];
+// FullArray(array);
+// PrintArray(array);
+// int Q = 7 ;
+
+// if (CheckNumberInArray(array , Q) ==true )
+//     System.Console.WriteLine("Da");
+
+// else
+//     System.Console.WriteLine("Net");
+
+// void FullArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(1,10);
+//     }
+// }
+
+// void PrintArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//        System.Console.Write(array[i] + " "); 
+//     }
+//     System.Console.WriteLine();
+// }
+
+// bool CheckNumberInArray(int[]array , int Q)
+// {  
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] == Q)
+//         {
+//             return true;
+//         }
+//     }
+//     return false;
+//  }   
+
+ //End
+
+ // Задача 35. Массив из 123 случ чисел
+
+int size = 123;
 int[] array = new int[size];
 FullArray(array);
 PrintArray(array);
-int Q = 7 ;
-
-if (CheckNumberInArray(array , Q) ==true )
-    System.Console.WriteLine("Da");
-
-else
-    System.Console.WriteLine("Net");
 
 void FullArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = new Random().Next(1,10);
+        array[i] = new Random().Next(0,1000);
     }
 }
 
@@ -72,14 +110,3 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
-bool CheckNumberInArray(int[]array , int Q)
-{  
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] == Q)
-        {
-            return true;
-        }
-    }
-    return false;
- }   
